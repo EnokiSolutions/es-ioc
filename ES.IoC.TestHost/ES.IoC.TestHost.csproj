@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ES.IoC.TestPlugin.Interface\ES.IoC.TestPlugin.Interface.csproj" />
+      <ProjectReference Include="..\ES.IoC.Wiring\Es.IoC.Wiring.csproj" />
+    </ItemGroup>
+
+</Project>

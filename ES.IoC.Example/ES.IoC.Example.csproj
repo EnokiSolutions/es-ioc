@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ES.IoC.Wiring\Es.IoC.Wiring.csproj" />
+      <ProjectReference Include="..\ES.IoC\ES.IoC.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_ES.IoC.-1566854547.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="ES.IoC" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ES.IoC.csproj" t="IncludeRecursive" />
+        <e p="ExecutionContext.cs" t="Include" />
+        <e p="IExecutionContext.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ES.IoC.Example" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Bootstrap.cs" t="Include" />
+        <e p="ES.IoC.Example.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.Example.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+      </e>
+      <e p="ES.IoC.sln" t="IncludeFlat" />
+      <e p="ES.IoC.Test" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ES.IoC.Test.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TestFixture.cs" t="Include" />
+      </e>
+      <e p="ES.IoC.TestHost" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ES.IoC.TestHost.csproj" t="IncludeRecursive" />
+        <e p="ITestHost.cs" t="Include" />
+        <e p="ITestHostArr.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.TestHost.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TestHostArr.cs" t="Include" />
+      </e>
+      <e p="ES.IoC.TestPlugin" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DoSomethingOne.cs" t="Include" />
+        <e p="DoSomethingTwo.cs" t="Include" />
+        <e p="ES.IoC.TestPlugin.csproj" t="IncludeRecursive" />
+        <e p="IOnePrefix.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.TestPlugin.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="OnePrefix.cs" t="Include" />
+      </e>
+      <e p="ES.IoC.TestPlugin.Interface" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ES.IoC.TestPlugin.Interface.csproj" t="IncludeRecursive" />
+        <e p="IDoSomething.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="ES.IoC.TestPlugin.Interface.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ES.IoC.Wiring" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Es.IoC.Wiring.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Es.IoC.Wiring.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Wire.cs" t="Include" />
+        <e p="Wirer.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

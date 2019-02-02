@@ -1,0 +1,12 @@
+*.dotCover
+*.docstates
+*.user
+*.suo
+*.nupkg
+deploy
+_ReSharper.*
+_dotCover.*
+bin/
+obj/
+build/
+packages/

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ES.IoC.TestHost\ES.IoC.TestHost.csproj" />
+      <ProjectReference Include="..\ES.IoC.TestPlugin.Interface\ES.IoC.TestPlugin.Interface.csproj" />
+      <ProjectReference Include="..\ES.IoC.TestPlugin\ES.IoC.TestPlugin.csproj" />
+      <ProjectReference Include="..\ES.IoC.Wiring\Es.IoC.Wiring.csproj" />
+      <ProjectReference Include="..\ES.IoC\ES.IoC.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FakeItEasy" Version="5.0.1" />
+      <PackageReference Include="NUnit" Version="3.11.0" />
+    </ItemGroup>
+
+</Project>
