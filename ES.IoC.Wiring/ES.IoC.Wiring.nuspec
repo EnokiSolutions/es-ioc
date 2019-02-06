@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ES.IoC.Wiring</id>
+    <version>2.0.0</version>
+    <authors>Clifford Hammerschmidt</authors>
+    <owners>Clifford Hammerschmidt</owners>
+    <licenseUrl>https://gitlab.com/enoki/es-ioc-nc3/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://gitlab.com/enoki/es-ioc-nc3</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wiring attributes used by ES.IoC for marking up infrastructure components of a program.</description>
+    <tags>IoC Wiring</tags>
+  </metadata>
+</package>
