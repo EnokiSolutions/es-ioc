@@ -1,7 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <LangVersion>7</LangVersion>
+        <Nullable>disable</Nullable>
+        <TargetFrameworks>netcoreapp3.0;netcoreapp5.0</TargetFrameworks>
+        <PackageVersion>2.0.0</PackageVersion>
+        <Authors>Cliff Hammerschmidt</Authors>
+        <Description>IoC system that supports creating bootstrap.cs files for Release mode builds.</Description>
+        <Copyright>2020</Copyright>
+        <PackageProjectUrl>http://github.com/EnokiSolutions/es-ioc</PackageProjectUrl>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageTags>IoC Automatic Wiring Infrastructure</PackageTags>
     </PropertyGroup>
 
 </Project>

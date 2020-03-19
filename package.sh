@@ -1,6 +1,5 @@
 #!/bin/bash
-for nuspec in $(find . -name '*.nuspec')
+for csproj in ES.IoC/ES.IoC.csproj ES.IoC.Wiring/ES.IoC.Wiring.csproj
 do
-  csproj=${nuspec/nuspec/csproj}
-  nuget pack $csproj -Prop Configuration=Release
+  dotnet pack -o . -c Release $csproj
 done

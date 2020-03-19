@@ -10,3 +10,5 @@ bin/
 obj/
 build/
 packages/
+.idea/
+.DS_Store

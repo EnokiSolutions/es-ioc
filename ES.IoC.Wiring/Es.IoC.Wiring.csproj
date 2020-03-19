@@ -1,7 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <LangVersion>7</LangVersion>
+        <TargetFrameworks>netcoreapp3.0;netcoreapp5.0</TargetFrameworks>
+        <PackageId>ES.IoC.Wiring</PackageId>
+        <PackageVersion>2.0.0</PackageVersion>
+        <Authors>Cliff Hammerschmidt</Authors>
+        <Description>Wiring attributes used by ES.IoC for marking up infrastructure components of a program.</Description>
+        <Copyright>2020</Copyright>
+        <PackageProjectUrl>http://github.com/EnokiSolutions/es-ioc</PackageProjectUrl>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageTags>IOC Wiring</PackageTags>
     </PropertyGroup>
 
 </Project>

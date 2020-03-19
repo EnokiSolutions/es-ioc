@@ -12,41 +12,58 @@ namespace ES.IoC.Example
         {
             var executionContext = ES.IoC.ExecutionContext.Create();
             var bootstrapFileName = Path.Combine(Environment.CurrentDirectory, "Bootstrap.cs");
-            if (!File.Exists(bootstrapFileName))
+            if (File.Exists(bootstrapFileName))
             {
-                throw new Exception($"Expected {bootstrapFileName} to exist");
-            }
-            var existingBootstrapCodeLines = File.ReadAllLines(bootstrapFileName);
-            var bootstrapCodeFor = executionContext.BootstrapCodeFor<T>();
-            var sb = new StringBuilder();
-            var i = 0;
-            while (i < existingBootstrapCodeLines.Length)
-            {
-                var line = existingBootstrapCodeLines[i];
-                if (line == "#if USE_ES_IOC_BOOTSTRAP // GENERATED")
+                System.Diagnostics.Debug.WriteLine($@"
+****************************************************************************************************
+Updating {bootstrapFileName}
+****************************************************************************************************
+");
+                var existingBootstrapCodeLines = File.ReadAllLines(bootstrapFileName);
+                var bootstrapCodeFor = executionContext.BootstrapCodeFor<T>();
+                var sb = new StringBuilder();
+                var i = 0;
+                while (i < existingBootstrapCodeLines.Length)
                 {
-                    sb.AppendLine(line);
-                    sb.Append(bootstrapCodeFor);
-                    while (i < existingBootstrapCodeLines.Length)
+                    var line = existingBootstrapCodeLines[i];
+                    if (line == "#if USE_ES_IOC_BOOTSTRAP // GENERATED")
                     {
-                        ++i;
-                        if (i >= existingBootstrapCodeLines.Length)
-                            throw new Exception("Unexpected end of bootstrap code, nothing after: #if USE_ES_IOC_BOOTSTRAP");
-                        line = existingBootstrapCodeLines[i];
-                        if (line == "#endif // GENERATED")
-                            break;
+                        sb.AppendLine(line);
+                        sb.Append(bootstrapCodeFor);
+                        while (i < existingBootstrapCodeLines.Length)
+                        {
+                            ++i;
+                            if (i >= existingBootstrapCodeLines.Length)
+                                throw new Exception(
+                                    "Unexpected end of bootstrap code, nothing after: #if USE_ES_IOC_BOOTSTRAP");
+                            line = existingBootstrapCodeLines[i];
+                            if (line == "#endif // GENERATED")
+                                break;
 
+                        }
                     }
+
+                    sb.AppendLine(line);
+                    ++i;
                 }
-                sb.AppendLine(line);
-                ++i;
+
+                var newFileContents = sb.ToString();
+                var originalFileContents = string.Join(Environment.NewLine, existingBootstrapCodeLines);
+                if (newFileContents != originalFileContents)
+                {
+                    File.WriteAllText(bootstrapFileName, newFileContents);
+                }
             }
-            var newFileContents = sb.ToString();
-            var originalFileContents = string.Join(Environment.NewLine, existingBootstrapCodeLines);
-            if (newFileContents != originalFileContents)
+            else
             {
-                File.WriteAllText(bootstrapFileName, newFileContents);
+                System.Diagnostics.Debug.WriteLine($@"
+****************************************************************************************************
+Not updating {bootstrapFileName} because it doesn't exist.
+Rerun in the same directory as {bootstrapFileName} to update it. 
+****************************************************************************************************
+");
             }
+
             return executionContext.Find<T>();
         }
         public static T Boot<T>() where T : class

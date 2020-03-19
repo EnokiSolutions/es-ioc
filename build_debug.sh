@@ -1,3 +1,2 @@
 #!/bin/sh
-nuget restore
-msbuild
+dotnet build

@@ -1,3 +1,2 @@
 #!/bin/sh
-nuget restore
-msbuild /p:Configuration=Release
+dotnet build /p:Configuration=Release
